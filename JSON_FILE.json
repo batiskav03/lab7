@@ -1,0 +1,70 @@
+{
+  "1": {
+    "id": 0,
+    "name": "lox",
+    "coordinates": {
+      "x": 1,
+      "y": 2.0
+    },
+    "creationDate": "Mar 11, 2022 9:53:12 PM",
+    "age": 15,
+    "color": "BLUE",
+    "type": "AIR",
+    "character": "GOOD",
+    "head": {
+      "eyesCount": 15,
+      "toothCount": 15.0
+    }
+  },
+  "2": {
+    "id": 1,
+    "name": "lox",
+    "coordinates": {
+      "x": 1,
+      "y": 2.0
+    },
+    "creationDate": "Mar 14, 2022 12:16:36 AM",
+    "age": 15,
+    "color": "BLUE",
+    "type": "AIR",
+    "character": "GOOD",
+    "head": {
+      "eyesCount": 15,
+      "toothCount": 15.0
+    }
+  },
+  "405": {
+    "id": 1,
+    "name": "lox",
+    "coordinates": {
+      "x": 123,
+      "y": 123.0
+    },
+    "creationDate": "Apr 12, 2022 7:09:40 PM",
+    "age": 123,
+    "color": "BLUE",
+    "type": "AIR",
+    "character": "GOOD",
+    "head": {
+      "eyesCount": 123123,
+      "toothCount": 1.2312312E8
+    }
+  },
+  "4": {
+    "id": 0,
+    "name": "lox",
+    "coordinates": {
+      "x": 123,
+      "y": 123.0
+    },
+    "creationDate": "Apr 12, 2022 8:20:43 PM",
+    "age": 15,
+    "color": "BLUE",
+    "type": "AIR",
+    "character": "GOOD",
+    "head": {
+      "eyesCount": 123,
+      "toothCount": 123.0
+    }
+  }
+}
