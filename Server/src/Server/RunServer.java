@@ -9,16 +9,18 @@ import java.net.Socket;
 public class RunServer {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-
+        ServerAuthorizer authorizer = new ServerAuthorizer();
         ServerCollection collection = new ServerCollection();
         ServerSocket server = new ServerSocket(1337);
 
         while (true){
             Socket client = server.accept();
+            System.out.println("Клиент успешно подключился");
+//            authorizer.logInWait(client);
             System.out.println("Подключился новый пользователь");
-            DataInputStream inputStream=new DataInputStream(client.getInputStream());
-            DataOutputStream outputStream=new DataOutputStream(client.getOutputStream());
-            ObjectInputStream objectInputStream=new ObjectInputStream(client.getInputStream());
+            DataInputStream inputStream = new DataInputStream(client.getInputStream());
+            DataOutputStream outputStream = new DataOutputStream(client.getOutputStream());
+            ObjectInputStream objectInputStream = new ObjectInputStream(client.getInputStream());
             new Thread(() -> {
                 AbstractCommand command = null;
                 try {

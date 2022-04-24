@@ -6,20 +6,21 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
+import static client.ClientStaticSocket.getClientSocket;
+
 public class SendCmd {
     private Socket socket;
     private DataInputStream inputStream;
-    private DataOutputStream outputStream;
+
     private BufferedReader keyboard;
     private ObjectOutputStream objectOutputStream;
 
     public SendCmd() {
         try {
-            socket = new Socket("localhost",1337);
             keyboard = new BufferedReader(new InputStreamReader(System.in));
-            objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
-            inputStream=new DataInputStream(socket.getInputStream());
-            outputStream=new DataOutputStream(socket.getOutputStream());
+            objectOutputStream = new ObjectOutputStream(getClientSocket().getOutputStream());
+            inputStream = new DataInputStream(getClientSocket().getInputStream());
+            
         } catch (IOException e ) {
             e.getMessage();
         }
